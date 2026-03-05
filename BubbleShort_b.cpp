@@ -55,3 +55,35 @@ void bubbleSort()
 
     } while (pass <= n - 1);                       // Step 5
 }
+void display()
+{
+    cout << endl;
+    cout << "================================" << endl;
+    cout << "Elemen Array yang telah tersusun" << endl;
+    cout << "================================" << endl;
+    cout << endl;
+    for (int j = 0; j < n; j++)
+    {
+        cout << arr[j];         // Menampilkan Array yang sudah diurutkan
+        if (j < n - 1)
+        {
+            cout << " --> ";      // Menampilkan koma setelah setiap elemen kecuali elemen terakhir
+        }
+         }
+    cout << endl;
+    cout << endl;
+
+    cout << "Jumlah Pass = " << n - 1 << endl; // Menampilkan jumlah pass yang dibutuhkan untuk mengurutkan array
+    cout << endl;
+    cout << endl;
+}
+
+int main()
+{
+    input();
+    BubbleSortArray();
+    display();          
+
+    system("pause");
+    return 0;
+}
