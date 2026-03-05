@@ -34,10 +34,24 @@ void bubbleSort()
     do
     {
 
-
    for (int j = 0; j<= n - 1 - pass; j++)
    (//step 2
         if(arr{j}) > arr {j + j})
         {// step 3
             int temp;
-            temp = arr }
+            temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+     }
+     pass += 1;                                 // Step 4
+
+        cout << "\nPass " << pass - 1 << ": ";
+        for (int k = 0; k < n; k++)
+        {
+            cout << arr[k] << " ";                 
+        }
+        cout << endl;
+
+    } while (pass <= n - 1);                       // Step 5
+}
